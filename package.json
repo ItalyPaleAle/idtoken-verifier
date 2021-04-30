@@ -1,7 +1,7 @@
 {
-  "name": "idtoken-verifier",
-  "version": "2.1.0",
-  "description": "A lightweight library to decode and verify RS JWT meant for the browser.",
+  "name": "@italypaleale/idtoken-verifier",
+  "version": "2.1.1",
+  "description": "(Fork of auth0/idtoken-verifier with some fixes) A lightweight library to decode and verify RS JWT meant for the browser.",
   "main": "build/idtoken-verifier.js",
   "umd:main": "build/idtoken-verifier.umd.js",
   "module": "build/idtoken-verifier.esm.js",
@@ -50,7 +50,7 @@
     "RS256",
     "browser"
   ],
-  "repository": "git@github.com:auth0/idtoken-verifier.git",
+  "repository": "git@github.com:italypaleale/idtoken-verifier.git",
   "devDependencies": {
     "@auth0/component-cdn-uploader": "github:auth0/component-cdn-uploader#v2.2.2",
     "@babel/preset-env": "^7.11.5",
