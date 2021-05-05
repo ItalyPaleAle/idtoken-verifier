@@ -50,31 +50,36 @@ export type validateAccessTokenCallback = (err?: Error) => any;
 
 export type IdTokenVerifierParameters = {
   /**
-   * name of the issuer of the token that should match the `iss`
+   * Name of the issuer of the token that should match the `iss`
    * claim in the id_token
    */
   issuer: string;
   /**
-   * identifies the recipients that the JWT is intended for and should
+   * Identifies the recipients that the JWT is intended for and should
    * match the `aud` claim
    */
   audience: string;
-  /** cache for JSON Web Token Keys; by default it has no cache */
-  jwksCache?: JWKSCache;
-  /** A valid, direct URI to fetch the JSON Web Key Set (JWKS) */
-  jwksURI: string;
   /**
-   * algorithm in which the id_token was signed and will be
+   * Cache for JSON Web Token Keys; by default it has no cache
+   */
+  jwksCache?: JWKSCache;
+  /**
+   * A valid, direct URI to fetch the JSON Web Key Set (JWKS).
+   * Defaults to `${id_token.iss}/.well-known/jwks.json`
+   */
+  jwksURI?: string;
+  /**
+   * Algorithm in which the id_token was signed and will be
    * used to validate
    */
   expectedAlg?: 'RS256';
   /**
-   * number of seconds that the clock can be out of sync
+   * Number of seconds that the clock can be out of sync
    * while validating expiration of the id_token
    */
   leeway?: number;
   /**
-   * max age
+   * Max age
    */
   maxAge?: number;
 };
