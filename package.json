@@ -1,6 +1,6 @@
 {
   "name": "@italypaleale/idtoken-verifier",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "(Fork of auth0/idtoken-verifier with some fixes) A lightweight library to decode and verify RS JWT meant for the browser.",
   "main": "build/idtoken-verifier.js",
   "umd:main": "build/idtoken-verifier.umd.js",
